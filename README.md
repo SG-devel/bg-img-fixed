@@ -1,5 +1,5 @@
-# bg-img
-Mobile-friendly javascript alternative to background-attachment:fixed for a fixed background image aka "fake" parallax scrolling effect.
+# bg-img-fixed
+Mobile-friendly fixed background images (aka "fake" parallax scrolling) as alternative to "background-attachment: fixed".
 
 Fixed background images aka "fake" parallax background images are static in position, i. e. do not move, while content moves on top when scrolling. In contrast, parallax background images move when scrolling, albeit slower than foreground elements. Please confer https://siteorigin.com/fixed-vs-parallax-background-images/ for details and a visual comparison.
 
@@ -22,12 +22,9 @@ Googling and visiting stackoverflow did not yield the desired results either. ba
 * Tested on Android: Chrome
 
 ## Setup
-* Download "bg-img.css" and "bg-img.js"
-* Include "bg-img.css" in the header of your HTML file
-* Include "bg-img.js" at the very end of the body in your HTML file
-
-## Technologies
-This project uses CSS and plain Javascript
+* Download "bg-img-fixed.css" and "bg-img-fixed.js"
+* Include "bg-img-fixed.css" in the header of your HTML file
+* Include "bg-img-fixed.js" at the very end of the body in your HTML file
 
 ## How it works
 Please confer index.html for a short, hands-on example. Backgorund images are a courtesy  of https://unsplash.com/.
@@ -36,3 +33,6 @@ The background images are set to cover the full viewport and are stacked on top 
 
 * Breakpoints are determined by looking for divs with class ".bg-img-fixed-breakpoint". divs used a breakpoint can be of height zero or contain content. In the latter case, the breakpoint is at the vertical middle of the div.
 * Background images must be placed in an outer div with classes ".bg-img-fixed" and ".z-\*", where \* determines the z-index and as such the order of the images in the stack. An inner div of class ".resize-wrapper" is needed for dynamic resizing on scroll. Example: "`<div class="bg-img-fixed z-1"><div class="resize-wrapper"><img src="..."></div></div>"`
+
+## Technologies
+This project uses CSS and plain Javascript
