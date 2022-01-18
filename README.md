@@ -1,9 +1,16 @@
 # bg-img
-Mobile-friendly javascript alternative to background-attachment:fixed for a "fake" parallax scrolling effect
+Mobile-friendly javascript alternative to background-attachment:fixed for a fixed background image aka "fake" parallax scrolling effect.
+
+Fixed background images aka "fake" parallax background images are static in position, i. e. do not move, while content moves on top when scrolling. In contrast, parallax background images move when scrolling, albeit slower than foreground elements. Please confer https://siteorigin.com/fixed-vs-parallax-background-images/ for details and a visual comparison.
+
+## Why does this repository exist?
+I wanted a fixed background image effect as showcased by w3schools (cf. https://www.w3schools.com/howto/howto_css_parallax.asp). However, as noted on w3schools, the effect did not work on mobile devices.
 
 ## Features
-* "Fake" parallax scrolling effect for background images with fixed position
+* Fixed background image or "fake" parallax scrolling effect for background images
 * Alternative to or replacement for "background-attachment: fixed" on mobile devices
+* Multiple background images can be cascaded
+* Handles resize events including address bars on mobile devices 
 * Tested on Windwos 11: Chrome, Firefox
 * Tested on iOS: Firefox, Safari
 * Tested on Android: Chrome
@@ -13,3 +20,6 @@ Download "bg-img.css" and "bg-img.js". Include "bg-img.css" in the header and "b
 
 ## Technologies
 This project uses CSS and plain Javascript
+
+## How it works
+The background images are set to cover the full viewport and are stacked on top of each other. A user-defined z-index determines their order. Within their content, the user defines breakpoints beyond which scrolling will start to reveal the next, i. e. underlying, background image. This is done by listening to the scroll event in Javascript and dynamically adjusting the hight(s) of the currently visible background image(s).
