@@ -1,0 +1,19 @@
+.bg-img-fixed {
+    position: fixed;
+    top: 0; left:0; right:0; bottom:0;
+}
+.bg-img-fixed img{
+    height: 100vh; width: 100vw;    
+    object-fit: cover;
+}
+.bg-img-fixed > .resize-wrapper {
+    overflow: hidden; 
+    width: 100vw; 
+}
+
+.bg-img-fixed.z-1{z-index: -1;}    
+.bg-img-fixed.z-2{z-index: -2;}   
+.bg-img-fixed.z-3{z-index: -3;}  
+.bg-img-fixed.z-4{z-index: -4;}  
+.bg-img-fixed.z-5{z-index: -5;}  
+.bg-img-fixed.z-6{z-index: -6;}
