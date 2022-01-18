@@ -6,6 +6,12 @@ Fixed background images aka "fake" parallax background images are static in posi
 ## Why does this repository exist?
 I wanted a fixed background image effect as showcased by w3schools (cf. https://www.w3schools.com/howto/howto_css_parallax.asp). However, as noted on w3schools, the effect did not work on mobile devices.
 
+Googling and visiting stackoverflow did not yield the desired results either. background-attachment: fixed seems to be problematic on mobile devices even in 2022.
+* https://stackoverflow.com/questions/63463976/background-attachment-fixed-not-working-on-some-mobile-safari-browsers
+* https://stackoverflow.com/questions/23236158/how-to-replicate-background-attachment-fixed-on-ios
+* https://stackoverflow.com/questions/20443574/fixed-background-image-with-ios7
+* https://stackoverflow.com/questions/46674255/background-attachment-fixed-is-not-working-on-mobile-devices
+
 ## Features
 * Fixed background image or "fake" parallax scrolling effect for background images
 * Alternative to or replacement for "background-attachment: fixed" on mobile devices
