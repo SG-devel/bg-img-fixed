@@ -3,6 +3,8 @@ Mobile-friendly fixed background images (aka "fake" parallax scrolling) as alter
 
 Fixed background images aka "fake" parallax background images are static in position, i. e. do not move, while content moves on top when scrolling. In contrast, parallax background images move when scrolling, albeit slower than foreground elements. Please confer https://siteorigin.com/fixed-vs-parallax-background-images/ for details and a visual comparison.
 
+You can see the background image effect in action here: https://www.ag-fotografie.at/
+
 ## Why does this repository exist?
 I wanted a fixed background image effect as showcased by w3schools (cf. https://www.w3schools.com/howto/howto_css_parallax.asp). However, as noted on w3schools, the effect did not work on mobile devices.
 
